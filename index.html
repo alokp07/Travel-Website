@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <script>
+      function log()
+        {
+          const a = document.getElementById("hmm");
+          a.style.visibility = "visible";
+        }
+      function sign()
+        {
+          const a = document.getElementById("hmm");
+          a.style.visibility = "visible";
+        }
+      function closedb()
+        {
+          const a = document.getElementById("hmm");
+          a.style.visibility = "hidden";
+        }
+    </script>
+
+  </head>
+
+<body>
+  
+<div id="navbar-div" class="vh-100 overflow-hidden">
+    <div id="navbar-heading" class="text-white d-flex align-items-center">
+      <h1 class="" 
+      data-mdb-toggle="animation"
+      data-mdb-animation="slide-out-left"
+      data-mdb-animation-repeat="true"
+      >Explore the <br> <span>World</span> Now</h1>
+    </div>
+</div>
+
+  <!-- navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+  <div class="container">
+
+    <!-- logo -->
+
+    <a class="navbar-brand fs-4" href="#">Travel together</a>
+
+    <!-- Toggle Button -->
+
+    <button 
+    class="navbar-toggler shadow-none border-0" 
+     type="button" 
+     data-bs-toggle="offcanvas" 
+     data-bs-target="#offcanvasNavbar" 
+     aria-controls="offcanvasNavbar" 
+     aria-label="Toggle navigation"
+     >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      
+      <!-- Sidebar Header -->
+      
+      <div class="offcanvas-header text-white border-bottom">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <!-- sidebar body -->
+
+      <div class="offcanvas-body d-flex flex-lg-row flex-column p-4 p-lg-0">
+        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#explore">Explore</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+        </ul>
+
+        <!-- Login -->
+
+        <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3">
+          <a href="" onclick="log();return false" class="text-white text-decoration-none">Login</a>
+          <a 
+          href=""
+          onclick="sign();return false"
+          class="text-white 
+          text-decoration-none px-3 py-1
+          rounded-4"
+          style="background-color: #f94ca4;"
+          >Sign Up</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Sign in -->
+
+<div id="hmm" class="position-fixed w-100 vh-100 sign-in-div">
+  
+  <div class="sign-in px-5 position-relative">
+    <i onclick="closedb()" class="fa-solid fa-xmark fa-2x position-absolute" style="cursor: pointer;left: 85%;top: 5%;"></i>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background-color: transparent;color: white;">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" style="background-color: transparent;color: white;">
+      </div>
+      <div class="d-flex justify-content-center gap-3">
+        <button onclick="closedb()" type="submit" class="btn px-4 py-2" id="l-btn">Log in</button>
+        <button onclick="closedb()" type="submit" class="btn px-4 py-2" id="s-btn">Sign in</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+
+<!-- Boxes -->
+
+<div id="boxes" class="overflow-hidden">
+
+  <div class="box-heading">
+    <h1>Raise wings for <br>Journey</h1>
+  </div>
+  <div id="box-content" class="row gx-4 px-4 mt-4 text-white">
+    <div class="col-12 col-lg-4">
+      <div class="box-img"><img width="100%" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/home-2-carousel-image-6.jpg" alt=""></div><br>
+      <h1 id="box-text" class="fs-3">TRAIBAL TOUR</h1><br>
+      <h5 id="box-text2" class="fw-light"><i class="fa-solid fa-location-pin"></i>California</h5>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="box-img"><img width="100%" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/home-2-carousel-image-5.jpg" alt=""></div class="box-img"><br>
+      <h1 id="box-text" class="fs-3">WHITEWATER RAFTING</h1><br>
+      <h5 id="box-text2" class="fw-light"><i class="fa-solid fa-location-pin"></i>Australia</h5>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="box-img"><img width="100%" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/home-2-carousel-image-4.jpg" alt=""></div class="box-img"><br>
+      <h1 id="box-text" class="fs-3">RIVER KAYAKING</h1><br>
+      <h5 id="box-text2" class="fw-light"><i class="fa-solid fa-location-pin"></i>USA</h5>
+    </div>
+  </div>
+
+</div>
+
+<!-- What we Offer -->
+
+<section id="services">
+  <div id="wwo" class="vh-100 overflow-hidden">
+  
+    <div class="w-100 text-white">
+  
+      <div style="padding: 3%;">
+        <p style="text-align: center; font-family: 'Lobster', cursive; font-size: 30px;">Making adventure tours and activities</p>
+        <h1 id="wwo-h">What we offer</h1>
+      </div>
+  
+    </div>
+  
+    <div class="text-white" style="text-align: left; margin-left: 12%; margin-top: 6%;">
+  
+      <div class="row mb-5">
+  
+        <div class="col-lg-6 col-12">
+          <h1 class="fs-3"><i class="fa-sharp fa-solid fa-signs-post"></i>Best Adventure Destination</h1>
+        </div>
+  
+        <div class="col-lg-6 col-12">
+          <h1 class="fs-3"><i class="fa-solid fa-location-dot"></i>Fine Routines For Your Destination</h1>
+        </div>
+  
+      </div>
+  
+      <div class="row">
+  
+        <div class="col-lg-6 col-12">
+          <h1 class="fs-3"><i class="fa-solid fa-map-location-dot"></i>Professional Tourist Guides</h1>
+        </div>
+  
+        <div class="col-lg-6 col-12">
+          <h1 class="fs-3"><i class="fa-solid fa-truck-pickup"></i>Doorstep Pickup And Drop</h1>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+    <div  style="margin-top: 7%; margin-left: 12%;">
+  
+      <div class="row text-white d-flex align-items-center">
+  
+        <div class="col-lg-4">       
+          <button id="sub-btn">BOOK NOW</button>
+        </div>
+  
+        <div class="col-lg-4">
+          <h5>Call Us Anytime <br><span id="wwo-span">+00 123 456789</span></h5>
+        </div>
+  
+        <div class="col-lg-4">
+          <h5>Email Us Anytime <br><span id="wwo-span">ex@gmail.com</span></h5>
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+</section>
+
+<!-- explore -->
+
+<section id="explore">
+  
+  <div class="w-100 bg-black" style="height: auto;">
+  
+    <div class="text-white pt-5">
+        <div><h1 style="text-align: center; font-family: cursive; font-size: x-large;">Place up travel</h1></div>
+        <div class="pt-3"><h1 style="text-align: center; font-weight: bolder; font-size: 50px;">Dream. Explore. Discover.</h1></div>
+    </div>
+  
+    <div class="w-100 d-flex flex-column align-items-center">
+  
+      <div class="row px-4 text-white w-100">
+  
+        <div class="col-lg-6 col-12">
+          <div style="position: relative; top: 50%; width: 100%; flex-direction: column;" class="d-flex justify-content-center align-items-center">
+            <h1>AUSTRALIA</h1>
+            <button id="exp-btn">14 TRAVELS</button></div>
+          <img id="exp-img" class="w-100" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/Acomm-catagory-1.webp" alt="">
+        </div>
+  
+        <div class="col-lg-6 col-12">
+          <div style="position: relative; top: 50%; width: 100%; flex-direction: column;" class="d-flex justify-content-center align-items-center">
+            <h1>CANADA</h1>
+            <button id="exp-btn">12 TRAVELS</button></div>
+          <img id="exp-img" class="w-100"  src="https://advenx.wpengine.com/wp-content/uploads/2023/04/Acomm-catagory-4.webp" alt="">
+        </div>
+        
+      </div>
+  
+      <div class="row px-4 text-white w-100" style="position: relative; bottom: 70px;">
+  
+        <div class="col-lg-4 col-12">
+          <div style="position: relative; top: 50%; width: 100%; flex-direction: column;" class="d-flex justify-content-center align-items-center">
+            <h1>INDIA</h1>
+            <button id="exp-btn">13 TRAVELS</button></div>
+          <img id="exp-img" class="w-100"  src="https://advenx.wpengine.com/wp-content/uploads/2023/04/Acomm-catagory-5.webp" alt="">
+        </div>
+  
+        <div class="col-lg-4 col-12">
+          <div style="position: relative; top: 50%; width: 100%; flex-direction: column;" class="d-flex justify-content-center align-items-center">
+            <h1>SWITZERLAND</h1>
+            <button id="exp-btn">10 TRAVELS</button></div>
+          <img id="exp-img" class="w-100"  src="https://advenx.wpengine.com/wp-content/uploads/2023/04/Acomm-catagory-3.webp" alt="">
+        </div>
+  
+        <div class="col-lg-4 col-12">
+          <div style="position: relative; top: 50%; width: 100%; flex-direction: column;" class="d-flex justify-content-center align-items-center">
+            <h1>THAILAND</h1>
+            <button id="exp-btn">12 TRAVELS</button></div>
+          <img id="exp-img" class="w-100"  src="https://advenx.wpengine.com/wp-content/uploads/2023/04/Acomm-catagory-2.webp" alt="">
+        </div>
+  
+      </div>
+  
+    </div>
+  
+  </div>
+
+</section>
+
+<!-- Join us -->
+
+<div id="join" class="vh-100 w-100 d-flex flex-column align-items-center" style="padding-top: 12%;">
+    <div class="row w-100">
+      <div class="col-6 d-none d-lg-block"></div>
+      <div class="col-lg-6 col-12 sm-w-100 text-white">
+        <div class="row w-100 pb-5">
+          <h1 id="join-text" style="font-weight: bolder; font-size: 50px;">Create unforgettable <br> memories</h1>
+        </div>
+        <div class="row w-100 pb-5">
+            <p id="join-text" style="font-weight: lighter;">Pellentesque nec nam aliquam sem et tortor consequat <br> id porta. Eu non diam phasellus vestibulum endum at <br> varius vel pharetra.</p>
+        </div>
+        <div id="join-btn-div" class="row w-100">
+            <button id="join-btn" class="w-25 border-0 text-white" style="height: 40px;">Join Us</button>
+        </div>
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Product -->
+
+<section id="products">
+  <div class="bg-black d-flex flex-column align-items-center">
+
+    <div>
+      <h1 class="text-white" style="font-size: 45px; text-align: center; padding-top: 5%;">Handpicked Products</h1>
+    </div>
+
+    <div class="row pt-5 text-white px-4 w-100">
+      <div class="col-lg-3 col-md-6 col-12">
+          <div class="w-100 d-flex align-items-center justify-content-center position-relative product-img-div" style="height: auto; background-color: grey;">
+            <img id="product-img" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/shop-11.webp" alt="">
+            <div class="w-100 h-100 position-absolute top-0 product-overlay d-flex justify-content-center align-items-center">
+              <button class="overlay-btn py-3">ADD TO CART</button>
+            </div>
+          </div>
+          <div><h1 class="pt-2" style="font-size: 23px;">TREKKING SHOE</h1></div>
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <div>
+            <h4 class="pt-2"><i class="fa-solid fa-dollar-sign"></i>40.00</h4>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="w-100 d-flex align-items-center justify-content-center position-relative product-img-div" style="height: auto; background-color: grey;">
+          <img id="product-img" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/shop-12.webp"  alt="">
+          <div class="w-100 h-100 position-absolute top-0 product-overlay d-flex justify-content-center align-items-center">
+            <button class="overlay-btn py-3">ADD TO CART</button>
+          </div>
+        </div>
+        <div><h1 class="pt-2" style="font-size: 23px;">TREKKING SIPPER</h1></div>
+        <div>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <div>
+          <h4 class="pt-2"><i class="fa-solid fa-dollar-sign"></i>40.00</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="w-100 d-flex align-items-center justify-content-center position-relative product-img-div" style="height: auto; background-color: grey;">
+          <img id="product-img" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/shop-1.webp" alt="">
+          <div class="w-100 h-100 position-absolute top-0 product-overlay d-flex justify-content-center align-items-center">
+            <button class="overlay-btn py-3">ADD TO CART</button>
+          </div>
+        </div>
+        <div><h1 class="pt-2" style="font-size: 23px;">RAIN JACKET</h1></div>  
+        <div>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <div>
+          <h4 class="pt-2"><i class="fa-solid fa-dollar-sign"></i>40.00</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="w-100 d-flex align-items-center justify-content-center position-relative product-img-div" style="height: auto; background-color: grey;">
+          <img id="product-img" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/shop-2.webp" alt="">
+          <div class="w-100 h-100 position-absolute top-0 product-overlay d-flex justify-content-center align-items-center">
+            <button class="overlay-btn py-3">ADD TO CART</button>
+          </div>
+        </div>  
+        <div><h1 class="pt-2" style="font-size: 23px;">POLARIZED SUNGLASSES</h1></div>
+        <div>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <div>
+          <h4 class="pt-2"><i class="fa-solid fa-dollar-sign"></i>12.00</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-white w-100 px-4 pt-5">
+      <div class="col-lg-3 col-md-6 col-12">
+          <div class="w-100 d-flex align-items-center justify-content-center position-relative product-img-div" style="height: auto; background-color: grey;">
+            <img id="product-img" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/shop-3.webp" alt="">
+            <div class="w-100 h-100 position-absolute top-0 product-overlay d-flex justify-content-center align-items-center">
+              <button class="overlay-btn py-3">ADD TO CART</button>
+            </div>
+          </div>
+          <div><h1 class="pt-2" style="font-size: 23px;">LED TORCH</h1></div>
+          <div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <div>
+            <h4 class="pt-2"><i class="fa-solid fa-dollar-sign"></i>18.00</h4>
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="w-100 d-flex align-items-center justify-content-center position-relative product-img-div" style="height: auto; background-color: grey;">
+          <img id="product-img" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/shop-4.webp" alt="">
+          <div class="w-100 h-100 position-absolute top-0 product-overlay d-flex justify-content-center align-items-center">
+            <button class="overlay-btn py-3">ADD TO CART</button>
+          </div>
+        </div>
+        <div><h1 class="pt-2" style="font-size: 23px;">WIFI VIDEO CAMERA</h1></div>
+        <div>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <div>
+          <h4 class="pt-2"><i class="fa-solid fa-dollar-sign"></i>140.00</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="w-100 d-flex align-items-center justify-content-center position-relative product-img-div" style="height: auto; background-color: grey;">
+          <img id="product-img" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/shop-5.webp" alt="">
+          <div class="w-100 h-100 position-absolute top-0 product-overlay d-flex justify-content-center align-items-center">
+            <button class="overlay-btn py-3">ADD TO CART</button>
+          </div>
+        </div>
+        <div><h1 class="pt-2" style="font-size: 23px;">TRAVEL SANDALS</h1></div>  
+        <div>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <div>
+          <h4 class="pt-2"><i class="fa-solid fa-dollar-sign"></i>6.00</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="w-100 d-flex align-items-center justify-content-center position-relative product-img-div" style="height: auto; background-color: grey;">
+          <img id="product-img" src="https://advenx.wpengine.com/wp-content/uploads/2023/04/shop-6.webp" alt="">
+          <div class="w-100 h-100 position-absolute top-0 product-overlay d-flex justify-content-center align-items-center">
+            <button class="overlay-btn py-3">ADD TO CART</button>
+          </div>
+        </div>  
+        <div><h1 class="pt-2" style="font-size: 23px;">TOILETRY BAG</h1></div>
+        <div>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <div>
+          <h4 class="pt-2" style="padding-bottom: 30%;"><i class="fa-solid fa-dollar-sign"></i>40.00</h4>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Last Section -->
+  
+
+<div class="d-flex flex-column align-items-center">
+    <div class="row w-100 text-white">
+
+      <div class="col-lg-4 col-12 p-0">
+        <div id="last-img" class="hov p-5 d-flex align-items-center">
+         <div class="last">
+            <div class="row pb-3 de">
+              <i class="fa-solid fa-person-hiking fa-3x"></i>
+            </div>
+            <div class="row pb-3">
+                <h1>Best Hiking Places</h1>
+            </div>
+            <div class="row">
+              <p>Hiking is a long, vigorous walk, usually on trails or footpaths in the countryside. Walking for pleasure developed in Europe during the eighteenth century.</p>
+            </div>
+         </div> 
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-12 p-0">
+        <div id="last-img2" class="hov p-5 d-flex align-items-center">
+         <div class="last">
+            <div class="row pb-3">
+              <i class="fa-solid fa-sailboat fa-3x"></i>
+            </div>
+            <div class="row pb-3">
+                <h1>Boat Visiting Places</h1>
+            </div>
+            <div class="row">
+              <p>Boating is the leisurely activity of travelling by boat, or the recreational use of a boat whether powerboats, sailboats, or man-powered vessels</p>
+            </div>
+         </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-12 p-0">
+        <div id="last-img3" class="hov p-5 d-flex align-items-center">
+         <div class="last">
+            <div class="row pb-3">
+              <i class="fa-solid fa-cable-car fa-3x"></i>
+            </div>
+            <div class="row pb-3">
+                <h1>Famous Hill Stations</h1>
+            </div>
+            <div class="row">
+              <p>A hill station is a town located at a higher elevation than the nearby plain or valley. The term was used mostly in colonial Asia, but also in Africa</p>
+            </div>
+         </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-12">
+        
+      </div>
+
+      <div class="col-lg-4 col-12">
+        
+      </div>
+
+    </div>
+</div>
+
+<footer>
+
+  <div>
+    <div class="row text-white foot">
+
+      <div class="col-lg-4 col-12 f-div px-5">
+        <h1 class="f-h">TRAVEL</h1>
+      </div>
+
+      <div class="col-lg-2 col-6 f-div px-4">
+        <h1>HOME</h1>
+        <h1>ABOUT US</h1>
+        <h1>TOURS</h1>
+      </div>
+
+      <div class="col-lg-2 col-6 f-div px-4">
+        <h1>FAQ</h1>
+        <h1>CONTACT US</h1>
+      </div>
+
+      <div class="col-lg-2 col-6 f-div px-4">
+        <h1>INDIA</h1>
+        <h1>THAILAND</h1>
+        <h1>SINGAPORE</h1>
+      </div>
+
+      <div class="col-lg-2 col-6 px-4">
+        <h1>FOLLOW US</h1>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>

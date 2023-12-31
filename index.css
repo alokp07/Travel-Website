@@ -1,0 +1,377 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Palanquin+Dark&display=swap');
+
+
+@media(max-width:991px)
+    {
+        #offcanvasNavbar
+            {
+                background-color: rgba(225, 255, 255, 0.15);
+                backdrop-filter: blur(10px);
+            }
+        #join-btn-div
+        {
+           display: flex;
+           justify-content: center;
+        }
+        #join-text
+            {
+                text-align: center;
+            }
+        #product-img
+            {
+                size: 10%;
+            }
+        .foot div  
+            {
+                border-bottom: 1px solid #616b6b;
+                padding: 5%;
+            }
+        .f-h
+            {
+                text-align: center;
+            }
+    }
+
+
+*
+    {
+        font-family: 'Palanquin Dark', sans-serif;
+    }
+
+#navbar-div
+    {
+        background: url('./Res/mount.jpg')rgba(0, 0, 0, 0.3);
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+#navbar-heading
+    {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+#navbar-heading h1
+    {
+        margin-left: 10%;
+        font-size: 70px;
+    }
+
+#navbar-heading span
+    {
+        color: orange;
+    }
+
+.sign-in-div
+    {
+        z-index: 3; 
+        top:0; 
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        visibility: hidden;
+    }
+
+.sign-in
+    {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        border-radius: 4%;
+    }
+
+#l-btn
+    {
+        border: 1px solid red;
+        color: white;
+    }
+
+#s-btn
+    {
+        border: 1px solid green;
+        color: white;
+    }
+
+#s-btn:hover    
+    {
+        background-color: green;
+    }
+
+#l-btn:hover    
+    {
+        background-color: red;
+    }
+
+.fa-xmark:hover 
+    {
+        color: red;
+    }
+
+#boxes
+    {
+        background-color: #050e0f;
+    }
+
+.box-heading h1 
+    {
+        font-size: 40px;
+        font-weight: bolder;
+        color: white;
+        margin-left:3%;
+        margin-top: 3%;
+    }
+
+i   
+    {
+        margin-right: 3%;
+    }
+
+#box-text
+    {
+        margin-top: 4%;
+        transition: 0.4s;
+    }
+
+#box-text2
+    {
+        margin-top: -3%;
+        transition: 0.4s;
+    }
+
+#box-content
+    {
+        margin-bottom: 5%;
+    }
+
+.box-img:hover  
+    {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+.box-img
+    {
+        transition: 0.3s ease;
+    }
+
+#box-text:hover,#box-text2:hover
+    {
+        color: orange;
+        cursor: pointer;
+    }
+
+#wwo
+    {
+        background: url('./Res/woman-woods.jpg')rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+#wwo-h
+    {
+        font-size: 60px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+#sub-btn
+    {
+        background-color: darkorange;
+        width:  150px;
+        height: 45px;
+        color: white;
+        font-family: cursive;
+        font-weight: bolder;
+        border: 0;
+        transition: .5s;
+    }
+
+#sub-btn:hover
+    {
+        background-color: black;
+    }
+
+#wwo-span
+    {
+        color: orange;
+    }
+
+#exp-h1
+    {
+        position: absolute;
+        top: 50%;
+    }
+
+#exp-btn
+    {
+        position: relative;
+        top:50%;
+        background-color: orange;
+        border: 0;
+        width: 200px;
+        height: 45px;
+        color: white;
+        transition: 1s;
+    }
+
+#exp-btn:hover
+    {
+        background-color: black;
+    }
+
+#exp-img
+    {
+        background-color: black;
+    }
+
+#join
+    {
+        background: url("https://advenx.wpengine.com/wp-content/uploads/2023/03/bg-for-video-banner-home-2-scaled.jpg");
+        background-blend-mode: multiply;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+#join-btn
+    {
+        background-color: darkorange;
+        transition: .5s;
+    }
+
+#join-btn:hover
+    {
+        background-color: black;
+    }
+
+.checked
+    {
+        color: orange;
+    }
+
+#product-img
+    {
+        width: 75%;
+    }
+
+.product-overlay
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        visibility: hidden;
+    }
+
+.overlay-btn
+    {
+        background-color: orange;
+        color: white;
+        width: 60%;
+        height: auto;
+        border: 0;
+        font-size: larger;
+    }
+
+.overlay-btn:hover  
+    {
+        background-color: black;
+    }
+
+.product-img-div:hover .product-overlay
+    {
+        visibility: visible;
+    }
+
+#last-img
+    {
+        background: url('https://advenx.wpengine.com/wp-content/uploads/2023/03/icon-box-with-image-bg-1.webp');
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%; 
+        height: 460px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    #last-img2
+    {
+        background: url('https://advenx.wpengine.com/wp-content/uploads/2023/03/icon-box-with-image-bg-2.webp');
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%; 
+        height: 460px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    #last-img3
+    {
+        background: url('https://advenx.wpengine.com/wp-content/uploads/2023/03/icon-box-with-image-bg-3.webp');
+
+        background-color: rgba(0, 0, 0, 0.4);
+        background-position: center;
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%; 
+        height: 460px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+.hov:hover .last i
+    {
+       color: orange;
+    }
+.hov:hover  
+    {
+        cursor: pointer;
+    }
+
+
+footer
+    {
+        background: url('./Res/conifers.jpg');
+        background-color: rgba(0, 0, 0, 0.6);
+        background-position: center;
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%; 
+        overflow: hidden;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+
+.foot div h1   
+    {
+        font-size:20px;
+        transition: .5s;
+    }
+
+.f-div   
+    {
+        border-right: 1px solid #616b6b;
+    }
+
+.foot div h1:hover 
+    {
+        color: orange;
+        cursor: pointer;
+    }
+
+
